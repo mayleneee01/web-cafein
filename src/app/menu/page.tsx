@@ -224,7 +224,7 @@ function ProductModal({ item, onClose, onAdd }: { item: MenuItem; onClose: () =>
           {item.isPromo && <span className="absolute top-3 left-3 bg-red-700 text-white text-[10px] font-semibold px-3 py-1 rounded-full tracking-wider">PROMO</span>}
         </div>
 
-        <div className="p-5 pb-10 md:pb-5">
+        <div className="p-5 pb-32 md:pb-8">
           <h2 className="font-heading text-xl font-bold">{item.name}</h2>
           <p className="text-xs text-charcoal/40 mt-1.5 leading-relaxed">{item.description}</p>
           <div className="mt-2.5">
