@@ -15,7 +15,7 @@ export default function CartPage() {
   const grandTotal = totalPrice + tax;
 
   return (
-    <div className="min-h-screen bg-cream pb-24 md:pb-8">
+    <div className="min-h-screen bg-cream pb-32 md:pb-8">
       <header className="sticky top-0 z-30 bg-cream-light/90 backdrop-blur-xl border-b border-cream-dark">
         <div className="max-w-2xl mx-auto px-4 py-3 flex items-center justify-between">
           <Link href="/menu" className="text-brand-lighter hover:text-brand flex items-center gap-1 text-xs font-medium"><ChevronLeft size={16} /> Menu</Link>

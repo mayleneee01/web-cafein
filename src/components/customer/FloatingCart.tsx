@@ -12,7 +12,7 @@ export default function FloatingCart() {
   return (
     <AnimatePresence>
       <motion.div initial={{ y: 80, opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: 80, opacity: 0 }}
-        className="fixed bottom-20 left-4 right-4 md:bottom-6 md:left-auto md:right-6 md:w-80 z-40">
+        className="fixed bottom-28 left-4 right-4 md:bottom-6 md:left-auto md:right-6 md:w-80 z-40">
         <Link href="/cart">
           <motion.div whileTap={{ scale: 0.97 }}
             className="bg-brand text-white rounded-2xl px-5 py-3.5 flex items-center justify-between shadow-xl shadow-charcoal/20 hover:bg-brand-light transition-colors">
