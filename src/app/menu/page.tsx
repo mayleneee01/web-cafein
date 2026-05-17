@@ -211,7 +211,7 @@ function ProductModal({ item, onClose, onAdd }: { item: MenuItem; onClose: () =>
   };
 
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 bg-black/60 z-50 flex items-end md:items-center justify-center" onClick={onClose}>
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 bg-black/60 z-[60] flex items-end md:items-center justify-center" onClick={onClose}>
       <motion.div initial={{ y: '100%' }} animate={{ y: 0 }} exit={{ y: '100%' }} transition={{ type: 'spring', damping: 25, stiffness: 300 }}
         onClick={e => e.stopPropagation()}
         className="bg-white w-full md:w-[480px] md:rounded-2xl rounded-t-3xl max-h-[90vh] overflow-y-auto">
@@ -224,7 +224,7 @@ function ProductModal({ item, onClose, onAdd }: { item: MenuItem; onClose: () =>
           {item.isPromo && <span className="absolute top-3 left-3 bg-red-700 text-white text-[10px] font-semibold px-3 py-1 rounded-full tracking-wider">PROMO</span>}
         </div>
 
-        <div className="p-5">
+        <div className="p-5 pb-10 md:pb-5">
           <h2 className="font-heading text-xl font-bold">{item.name}</h2>
           <p className="text-xs text-charcoal/40 mt-1.5 leading-relaxed">{item.description}</p>
           <div className="mt-2.5">
